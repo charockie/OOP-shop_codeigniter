@@ -3,18 +3,6 @@
 <html lang="en-gb">
 
 <head>
-    <!--[if lt IE 7]><style type="text/css">html{display:none;}</style><script>alert('Please get a new browser!');</script><![endif]-->
-
-    <script src="/static/js/jquery.min.js"></script>
-    <script>!window.jQuery && document.write('<script src="/static/js/jquery.1.5.2.js"><\/script>')</script>
-
-    <script>
-        jQuery.noConflict();
-    </script>
-
-    <!--[if IE]>
-    <script src="/static/js/html5.js"></script>
-    <![endif]-->
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="robots" content="index, follow" />
@@ -25,13 +13,6 @@
        <meta name="description" content="Te Contei restaurant template demo." />
 
     <title><?php echo $title; ?></title>
-
-    <link href="/favicon.ico" rel="shortcut icon" />
-
-    <link rel="stylesheet" href="/static/css/Dancing_Script.css" media="screen" />
-    <link rel="stylesheet" href="/static/css/template.css" media="screen" />
-    <link rel="stylesheet" href="/static/css/colorbox.css" />
-    <link rel="stylesheet" href="/static/css/options.css" />
 
     <noscript>
         <style>
@@ -54,37 +35,14 @@
 <header id="header" class="clearfix">
     <div class="wrap">
 
-        <div id="logo" class="left">
-            <a href="/">
-                Te Contei Restaurant Template Demo
-                <img src="/images/logos/logo.png" alt="Te Contei Restaurant Template Demo" />
-            </a>
-        </div>
+
+        <a href="/menu"><h3>Меню</h3></a>
+        <a href="/books">Все книги</a>
+        <a href="/films">Все фильмы</a>
+        <a href="/newFilm">Добавить фильм</a>
+        <a href="/newBook">Добавить книгу</a>
 
 
-        <div id="nav">
-
-            <nav class="jquery-menu clearfix">
-                <ul class="menu">
-                    <li class="current active"><a href="/">Home</a></li>
-                    <li class="parent"><a href="/menu/breakfast">Menu</a>
-                        <ul>
-                            <li><a href="/menu/breakfast">Breakfast</a></li>
-                            <li><a href="/menu/lunch">Lunch</a></li>
-
-                            <li><a href="/menu/dinner">Dinner</a></li>
-                            <li><a href="/menu/desserts">Desserts</a></li>
-                            <li><a href="/menu/drinks">Drinks</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/typography/" >Typography</a></li>
-                    <li><a href="/blog/">Blog</a></li>
-
-                    <li><a href="/gallery/">Gallery</a></li>
-                    <li><a href="/contact/">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
 
     </div>
 </header>

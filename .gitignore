@@ -1,8 +1,0 @@
-# folder logs
-logs/
-
-#txt-files
-docs/*.txt
-
-$folder user_guide
-user_guide/

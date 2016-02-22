@@ -50,21 +50,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 
-$route['admin'] = '/admin/login';
-$route['admin/main'] = '/admin/main';
-$route['admin/logout'] = '/admin/logOut';
-$route['admin/delete'] = '/admin/delete/$1';
-$route['admin/main/(:any)'] = '/admin/main/$1';
+$route['menu'] = 'productShop/menu';
+$route['newBook'] = 'productShop/addBook';
+$route['books'] = '/productShop/showBooks';
+$route['films'] = '/productShop/showFilms';
+$route['newFilm'] = '/productShop/addFilm';
+$route['book/(:any)'] = '/productShop/showBook/$1';
+$route['film/(:any)'] = '/productShop/showFilm/$1';
+$route['deleteBook/(:any)'] = '/productShop/deleteBook/$1';
+$route['deleteFilm/(:any)'] = '/productShop/deleteFilm/$1';
 
-$route['menu/search'] = '/menu/searchFood';
-$route['menu/search/(:any)'] = '/menu/searchFood/$1';
-$route['typography'] = 'typography/index';
-
-$route['menu'] = 'menu/food/breakfast';
-//$route['menu/search'] = '/menu/searchFood';
-$route['menu/(:any)'] = 'menu/food/$1/$2';
-$route['menu/(:any)/(:any)'] = 'menu/food/$1/$2';
-
-$route['default_controller'] = 'site/index';
+$route['default_controller'] = '/productShop/menu';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
